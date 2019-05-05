@@ -1,0 +1,52 @@
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+#product-show {
+  padding-top: 150px;
+}
+.solabest-well {
+  padding: 20px;
+  background-color: rgba(248, 248, 248, 0.5);
+}
+#product-show img {
+  width: 100%;
+  min-height: 217px;
+}
+#product-show p.lead{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  outline: none;
+}
+/* #product-show .item {
+  padding: 0 10px;
+} */
+#product-show .item a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#myModal .modal-content{
+  border-radius: 0;
+}
+#myModal .pr-desc {
+  background-color: rgba(0,0,0,0.3);
+  width: 40%;
+  padding: 10px;
+  color: #fff;
+}
+#myModal .close {
+  color: #fff;
+}
+#myModal .modal-title {
+  color: #fff;
+}
+.MultiCarousel .MultiCarousel-inner a.item {
+  z-index: 99999;
+}
