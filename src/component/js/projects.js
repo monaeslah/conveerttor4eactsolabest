@@ -1,26 +1,22 @@
-import { EBADF } from "constants";
+$(function() {
+    $('.pop').on('click', function() {
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');   
+    });		
+});
 
-export default () => {
-  $('.pop').on('click', function() {
-    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-    $('#imagemodal').modal('show');   
-});	
-}
-
-export default (magnificPopup) => {
-  $(".popup")({
-    type: "image",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: true,
-    gallery: {
-      enabled: true
-    }
+$(document).ready(function() {
+    $(".popup").magnificPopup({
+      type: "image",
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: true,
+      gallery: {
+        enabled: true
+      }
+    });
   });
-}
-
-export default (owlCarousel) => {
-  
+  console.log(lang)
   $(".bootleggers").owlCarousel({
     loop: true,
     margin: 10,
@@ -60,10 +56,6 @@ export default (owlCarousel) => {
       }
     }
   });
-}
-
-
-  console.log(lang)
 
 
 lang == "fa" ?

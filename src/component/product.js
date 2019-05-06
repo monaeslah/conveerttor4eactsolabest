@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './styles/style.css';
-import {products,quarry,staticContent } from './js/data';
+import {products,quarry,staticContent } from './js/dataproduc';
 
 export default class Product extends Component {
     state = {  }

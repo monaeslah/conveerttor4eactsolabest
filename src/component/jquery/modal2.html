@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fontawesomeall.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Centered Modal Example</h2>
+  <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade " id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content content-padding">
+      
+        <!-- Modal Header -->
+        <div >
+          <h4 class="modal-title ">
+              <p class="modal-title w-100 font-weight-bold modal-header-style">We Will Get in Touch with You As soon As Possible.</p>
+            </h4>
+         
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body input-placeholder ">
+                <div  class="colorHolder md-form mt-3 mb-5">
+                        <input type="password" name="password" class="py-4 havePlace form-control validate">
+                        <label>Name </label>
+                    </div>
+              
+                <div class="md-form mb-4 colorHolder">
+                <input type="email" id="form2"   class="py-4 havePlace form-control validate ">
+                <label> Your Work Email </label>    
+            </div>
+            <div class="md-form  colorHolder mt-5">
+                <div class="row">
+                    <div class="colorHolder  col-3">
+                      <input type="text" class=" py-4 havePlace form-control " >
+                      <label class="pl-3"> Country Code</label>
+                    </div>
+                    <div class="colorHolder  col-9">
+                    <input type="text" class="py-4 havePlace form-control  " >
+                    <label >Phone Number</label>
+                </div>
+                </div>
+                  
+                   
+                </div>
+                      </div>
+                       <!-- Modal footer -->
+                       <div>
+      
+                <button type="submit"  class="submit-style  buttn-sub btn-modal-sub" >submit </button>       
+           
+                    <button type="submit"  class="py-3 btn   mt-5 d-flex justify-content-center sub-btn submit-style btn-modal-cancle">cancel </button>
+              
+              </div>
+        </div>       
+       
+      </div>
+    </div>
+  </div>
+  
+</div>
+<script src="modal.js"></script>
+<script>
+$(document).ready(function(){
+  $(".sub-btn").click(function(){
+    
+    $('.modal').dialog('close');
+  });
+});
+</script>
+</body>
+</html>

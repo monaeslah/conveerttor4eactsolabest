@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import './js/projects'
+import './js/data'
 import './styles/style.css';
 
 export default class Quarry extends Component {
-    state = {  }
+    state = { 
+     
+     }
     render() {
         return (
             <React.Fragment>
@@ -39,10 +41,11 @@ export default class Quarry extends Component {
                                 <img alt="Solabest mining activities" src="images/quarry/003.jpg" />
                             </a>
                         </div>
-                        <div className="col-md-3 col-xs-6 query-row " />
-                            <a id="q4" className="">
-                                <img alt="Solabest mining activities" src="images/quarry/004.jpg" />
-                            </a>
+                        <div class="col-md-3 col-xs-6 query-row ">
+                        <a id="q4" class="">
+                            <img alt="Solabest mining activities"  src="images/quarry/004.jpg" />
+                        </a>
+                    </div>
                         </div>
                     </div>
                 </div>
