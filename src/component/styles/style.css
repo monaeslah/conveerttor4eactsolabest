@@ -166,7 +166,10 @@ body.fa {
 .carousel img.w-100 {
     width: 100%;
 }
-
+.carousel h3{
+    animation-delay: 2s
+}
+/* style=";" */
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-prev,
@@ -181,7 +184,7 @@ body.fa {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 20px;
-    /* height: 100vh; */
+    height: 100vh;
     /* padding-bottom: 20px; */
     display: flex;
     justify-content: center;
@@ -1095,26 +1098,20 @@ body, html {
     box-sizing: border-box;
   }
   
-  .bg-image {
-    /* The image used */
-    background-image: url("http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/10/mountains.jpg");
-    
-    /* Add the blur effect */    
-    width: 100%;
-    /* height: 1024px; */
-    opacity: 0.88;
-    -webkit-filter: blur(16px);
-    filter: blur(16px);
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Full height */
-  height: 100vh;
-    /* Center and scale the image nicely */
+#submition{
+    position: relative;
+    background-image: url(../images/bg_product.png);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  /* Position text in the middle of the page/image */
+    padding-bottom: 2.5rem;
+    min-height: 62.625rem;
+    height: 62.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -1123,10 +1120,10 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    padding: 20px;
-    padding-left: 8%;
-    padding-right: 8%;
-    height: 59.765%;
+    padding: 1.25rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    height: 38.25rem;
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border: solid 1px #979797;
@@ -1142,19 +1139,25 @@ body, html {
   
 }
 
-.input-modal-text input{ background-color: #d8d8d8;border:none;} 
+.input-modal-text input{
+     background-color: #d8d8d8;
+     border:none;
+     font-size: 1.5rem;
+     width:43.125rem;
+     padding: 0.825rem;
+    height: 4.5rem;
+    border-radius: 10px
+    } 
 
   .text-1 {
     width: 100%;
-    /* height: 23.53%; */
     font-family: Calibri;
-    font-size: 4.5rem;
+    font-size:4.5rem;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: normal;
- 
+    letter-spacing: normal; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1168,8 +1171,6 @@ body, html {
     color: #e9bf5a;
   }
   .text-2{
-    /* width: 76.38%; */
-    /* height: 8.34%; */
     font-family: Calibri;
     font-size: 1.5rem;
     font-weight: normal;
@@ -1186,35 +1187,25 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
   }
   .text-2 p{
       margin:0
   }
-  .bg-text input{
-    /* @media only screen and (min-width: 768px) {
-        input {width: 963px; }
-      
-      } */
-     width: 75vh;
-     padding: 10px;
-height: 7vh;
-border-radius: 10px
-  }
+  
   .buttn-sub{
-    width: 16vh;
-    height: 7vh;
+    width: 9.2rem;
+    height: 4.025rem;
     font-family: Calibri;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-    border-radius: 5px;
+    border-radius: 5px !important;
     background-color: #e9bf5a;
     border:none;
   }

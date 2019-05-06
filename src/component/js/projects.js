@@ -1,22 +1,26 @@
-$(function() {
-    $('.pop').on('click', function() {
-        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-        $('#imagemodal').modal('show');   
-    });		
-});
+import { EBADF } from "constants";
 
-$(document).ready(function() {
-    $(".popup").magnificPopup({
-      type: "image",
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: true,
-      gallery: {
-        enabled: true
-      }
-    });
+export default () => {
+  $('.pop').on('click', function() {
+    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('#imagemodal').modal('show');   
+});	
+}
+
+export default (magnificPopup) => {
+  $(".popup")({
+    type: "image",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: true,
+    gallery: {
+      enabled: true
+    }
   });
-  console.log(lang)
+}
+
+export default (owlCarousel) => {
+  
   $(".bootleggers").owlCarousel({
     loop: true,
     margin: 10,
@@ -56,6 +60,10 @@ $(document).ready(function() {
       }
     }
   });
+}
+
+
+  console.log(lang)
 
 
 lang == "fa" ?

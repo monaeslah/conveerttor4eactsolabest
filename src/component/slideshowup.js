@@ -1,11 +1,13 @@
 
 import React, { Component } from "react"
 import './styles/style.css'
+import './styles/animate.min.css'
+import './styles/top-slider.css'
 
 
 
 
-export default class Header extends Component {
+export default class Slideshotop extends Component {
   render(){
   return (
     <React.Fragment>
@@ -31,7 +33,7 @@ export default class Header extends Component {
             <div className="carousel-item item">
                 <img className="d-block w-100" alt="Solabest office & Showroom" src="images/first-page-slideshow/slideshow3.jpg" alt="Third slide" />
                 <div className="carousel-caption d-none d-md-block">
-                    <h3 className="animated fadeInDown" style="animation-delay: 2s;">Solabest Office & Showroom</h3>
+                    <h3 className="animated fadeInDown" >Solabest Office & Showroom</h3>
                 </div>
             </div>
             <div className="carousel-item item ">
