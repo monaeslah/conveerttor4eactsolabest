@@ -282,6 +282,7 @@ body.fa {
 
 .gallery img {
     width: 100%;
+    height: 200px;
 }
 
 .gallery #gallery-img-small>div {
