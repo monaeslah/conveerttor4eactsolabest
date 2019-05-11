@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 // import { Link } from 'react-dom'
 import './js/data'
+import './js/projects'
 import './styles/style.css';
 
 

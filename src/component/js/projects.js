@@ -1,3 +1,6 @@
+import React, { Component } from 'react';
+import $ from" jquary"
+
 $(function() {
     $('.pop').on('click', function() {
         $('.imagepreview').attr('src', $(this).find('img').attr('src'));
