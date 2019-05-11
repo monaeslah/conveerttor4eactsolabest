@@ -5,6 +5,7 @@ import Product from './component/product'
 import Modal1 from './component/specialdeals.js'
 import Quarry from './component/quarry';
 import Project from './component/project'
+import Contact from './component/contactUs'
 export default class  App extends Component {
   render(){
     return (
@@ -15,6 +16,7 @@ export default class  App extends Component {
      <Modal1/>
      <Quarry/>
      <Project/>
+     <Contact/>
       </div>
     );
   }

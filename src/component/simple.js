@@ -2,14 +2,14 @@ import React from "react"
 import $ from "jquery"
 
 import Header from "./header"
-import Footer from "./footer"
+
 
 export default class Layout extends React.Component {
   componentDidMount() {
-    import("wowjs").then(WOW => {
-      const wow = new WOW.WOW()
-      wow.init()
-    })
+    // import("wowjs").then(WOW => {
+    //   const wow = new WOW.WOW()
+    //   wow.init()
+    // })
 
 
     $(function(){
@@ -36,7 +36,7 @@ export default class Layout extends React.Component {
         <Header />
         <div class="affix-element" />
         {children}
-        <Footer hideFooterArrow={hideFooterArrow} />
+    
       </React.Fragment>
     )
   }
